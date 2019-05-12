@@ -13,6 +13,11 @@ Note: All variants are compiled within docker containers, so no variant specific
 cd c && make run; cd -
 ```
 
+### [C++](./cpp)
+```
+cd cpp && make run; cd -
+```
+
 ### [Golang](./go)
 ```
 cd go && make run; cd -
