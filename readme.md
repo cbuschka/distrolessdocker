@@ -12,5 +12,4 @@ make run
 ```
 
 ## license
-
-mit
+MIT
