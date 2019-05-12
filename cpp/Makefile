@@ -8,7 +8,7 @@ clean:
 	rm -rf build/
 
 dockerize:
-	docker build --tag distrolesscpp:latest -f Dockerfile .
+	docker build --tag distrolessdocker:cpp-latest -f ../Dockerfile .
 
 run:	compile dockerize
-	docker run -ti distrolesscpp:latest
+	docker run -ti distrolessdocker:cpp-latest

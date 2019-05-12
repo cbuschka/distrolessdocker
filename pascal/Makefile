@@ -11,7 +11,7 @@ clean:
 	rm -rf build/
 
 dockerize:
-	docker build --tag distrolesspascal:latest -f Dockerfile .
+	docker build --tag distrolessdocker:pascal-latest -f ../Dockerfile .
 
 run:	compile dockerize
-	docker run -ti distrolesspascal:latest
+	docker run -ti distrolessdocker:pascal-latest

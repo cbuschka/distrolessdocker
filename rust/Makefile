@@ -11,7 +11,7 @@ clean:
 	rm -rf build/
 
 dockerize:
-	docker build --tag distrolessrust:latest -f Dockerfile .
+	docker build --tag distrolessdocker:rust-latest -f ../Dockerfile .
 
 run:	compile dockerize
-	docker run -ti distrolessrust:latest
+	docker run -ti distrolessdocker:rust-latest

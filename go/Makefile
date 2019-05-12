@@ -11,7 +11,7 @@ clean:
 	rm -rf build/
 
 dockerize:
-	docker build --tag distrolessgo:latest -f Dockerfile .
+	docker build --tag distroless:go-latest -f ../Dockerfile .
 
 run:	compile dockerize
-	docker run -ti distrolessgo:latest
+	docker run -ti distrolessdocker:go-latest

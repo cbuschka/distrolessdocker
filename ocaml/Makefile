@@ -12,7 +12,7 @@ clean:
 	rm -rf build/
 
 dockerize:
-	docker build --tag distrolessocaml:latest -f Dockerfile .
+	docker build --tag distroless:ocaml-latest -f ../Dockerfile .
 
 run:	compile dockerize
-	docker run -ti distrolessocaml:latest
+	docker run -ti distrolessdocker:ocaml-latest
