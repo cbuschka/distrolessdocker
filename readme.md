@@ -38,5 +38,10 @@ cd pascal && make run; cd -
 cd rust && make run; cd -
 ```
 
+### Do 'em all
+```
+for variant in c cpp go ocaml pascal rust; do cd ${variant}; make run; cd -; done
+```
+
 ## License
 MIT
