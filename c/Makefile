@@ -2,7 +2,7 @@ all:	clean compile dockerize
 
 compile:
 	mkdir -p build/
-	gcc main.c -o build/hello -static
+	docker run -ti -v ${PWD}:/work -w /work -u $(id -u):$(id -g) gcc:9 gcc main.c -o build/hello -static
 
 clean:
 	rm -rf build/
