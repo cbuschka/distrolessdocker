@@ -28,6 +28,11 @@ cd go && make run; cd -
 cd ocaml && make run; cd -
 ```
 
+### [Pascal](./pascal)
+```
+cd pascal && make run; cd -
+```
+
 ### [Rust](./rust)
 ```
 cd rust && make run; cd -
