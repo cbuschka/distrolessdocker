@@ -8,18 +8,17 @@ Note: All variants are compiled within docker containers, so no variant specific
 
 ## Usage
 
-## Variants
-* [C](./c)
+### [C](./c)
 ```
 cd c && make run; cd -
 ```
 
-* [Golang](./go)
+### [Golang](./go)
 ```
 cd go && make run; cd -
 ```
 
-* [Rust](./rust)
+### [Rust](./rust)
 ```
 cd rust && make run; cd -
 ```
