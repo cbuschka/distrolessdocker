@@ -1,4 +1,4 @@
-# distroless docker container with statically linked c binary
+# Distroless docker container with statically linked c binary
 
 ## prerequesites
 * gcc with static libc

@@ -1,4 +1,4 @@
-# distroless docker container with statically linked binaries in different languages
+# Distroless docker container with statically linked binaries in different languages
 
 * [C](./c)
 
