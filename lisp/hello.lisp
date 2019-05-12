@@ -1,6 +1,3 @@
-(defun main ()
+(defun main (argv)
+  (declare (ignore argv))
   (format t "Hello world."))
-
-(sb-ext:save-lisp-and-die "hello"
-:executable t
-:toplevel 'main)

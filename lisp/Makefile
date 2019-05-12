@@ -5,7 +5,7 @@ prepare:
 
 compile:	prepare
 	mkdir -p build/
-	docker run -ti -v ${PWD}:/work -w /work -u $(shell id -u):$(shell id -g) debian:stretch-lisp bash -c "cd build/ && sbcl --disable-debugger --script ../hello.lisp"
+	docker run -ti -v ${PWD}:/work -w /work -u $(shell id -u):$(shell id -g) debian:stretch-lisp bash -c "cd build/ && buildapp --load ../hello.lisp --output hello --entry main"
 
 clean:
 	rm -rf build/
