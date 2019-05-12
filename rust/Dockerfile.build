@@ -1,0 +1,8 @@
+FROM rust:1.34-stretch
+
+RUN export DEBIAN_FRONTEND=noninteractive; apt-get update \
+	&& apt-get install --no-install-recommends -y musl musl-tools \
+	&& apt-get autoremove -y \
+	&& rm -rf /var/lib/apt/lists/*
+
+RUN rustup target add x86_64-unknown-linux-musl
