@@ -1,15 +1,6 @@
-# distroless docker container with statically linked c binary
+# distroless docker container with statically linked binaries in different languages
 
-## prerequesites
-* gcc with static libc
-* docker
-
-## usage
-
-### clean, compile, package docker container and run
-```
-make run
-```
+* [C](./c)
 
 ## license
 MIT
