@@ -23,6 +23,11 @@ cd cpp && make run; cd -
 cd go && make run; cd -
 ```
 
+### [Ocaml](./ocaml)
+```
+cd ocaml && make run; cd -
+```
+
 ### [Rust](./rust)
 ```
 cd rust && make run; cd -
