@@ -18,6 +18,11 @@ cd c && make run; cd -
 cd cpp && make run; cd -
 ```
 
+### [Fortran](./fortran)
+```
+cd fortran && make run; cd -
+```
+
 ### [Golang](./go)
 ```
 cd go && make run; cd -
