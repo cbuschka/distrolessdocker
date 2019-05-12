@@ -10,17 +10,17 @@ Note: All variants are compiled within docker containers, so no variant specific
 ## Variants
 * [C](./c)
 ```
-cd c && make run
+cd c && make run; cd -
 ```
 
 * [Golang](./go)
 ```
-cd go && make run
+cd go && make run; cd -
 ```
 
 * [Rust](./rust)
 ```
-cd rust && make run
+cd rust && make run; cd -
 ```
 
 ## License
