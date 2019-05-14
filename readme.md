@@ -1,5 +1,16 @@
 # Distroless docker container with statically linked binaries in different languages
 
+## Backrground
+A docker container is distroless when it is not based on a linux distribution, it is created "FROM scratch". The docker image then consists of a single binary only. The only interface the binary can utilize is the kernel call api, because there are no other libs in the image. 
+
+Pro:
+- small attack vector
+- light footprint
+Contra:
+- ???
+
+This is a collection of programs in different languages that can be linked statically and so can serve for a distroless docker container.
+
 ## Prerequesites
 * make
 * docker
