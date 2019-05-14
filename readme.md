@@ -12,7 +12,7 @@ Contra:
 
 This is a collection of programs in different languages that can be linked statically and so can serve for a distroless docker container.
 
-## Prerequesites
+## Prerequisites
 * make
 * docker
 
@@ -29,7 +29,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 | Fortran   | 1096488 | [Fortran](./fortran) |       |
 | Golang    | 1997487 | [Golang](./go) |       |
 | Java      | n/a |      | gcj is dead, it seems that libgcj.a has never been delivered |
-| Lisp      | n/a |      | didnt make it yet |
+| Lisp      | n/a | [Lisp](./lisp) | doesn't link statically, yet |
 | Ocaml     | 1795392 | [Ocaml](./ocaml) |       |
 | Pascal    | 176424 | [Pascal](./pascal) |       |
 | Rust      | 1931280 | [Rust](./rust) |       |
