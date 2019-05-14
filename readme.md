@@ -8,6 +8,11 @@ Note: All variants are compiled within docker containers, so no variant specific
 
 ## Usage
 
+### [Assembler x86](./asm)
+```
+cd asm && make run; cd -
+```
+
 ### [C](./c)
 ```
 cd c && make run; cd -
