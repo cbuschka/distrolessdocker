@@ -28,7 +28,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 | D         |      |      | problems with static linking, PIC and PIE, seg faults |
 | Fortran   | 1096488 | [Fortran](./fortran) |       |
 | Golang    | 1997487 | [Golang](./go) |       |
-| Java      | n/a |      | gcj is dead |
+| Java      | n/a |      | gcj is dead, libgcj.a seems never to be delivered |
 | Lisp      | n/a |      | didnt make it yet |
 | Ocaml     | 1795392 | [Ocaml](./ocaml) |       |
 | Pascal    | 176424 | [Pascal](./pascal) |       |
