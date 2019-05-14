@@ -17,51 +17,26 @@ This is a collection of programs in different languages that can be linked stati
 
 Note: All variants are compiled within docker containers, so no variant specific dependencies required.
 
+## Summary
+
+| Language  | Size | Link | Notes |   
+|-----------|------|------|-------|
+| Assembler | 776  | [x86 Assembler](./asm) |       |
+| C         | 967264 | [C](./c)     |       |
+| C++       | 2249328 | [C++](./cpp) |       |
+| D         |      |      | problems with static linking, PIC and PIE, seg faults |
+| Fortran   | 1096488 | [Fortran](./fortran) |       |
+| Golang    | 1997487 | [Golang](./go) |       |
+| Java      | n/a |      | gcj is dead |
+| Lisp      | n/a |      | didnt make it yet |
+| Ocaml     | 1795392 | [Ocaml](./ocaml) |       |
+| Pascal    | 176424 | [Pascal](./pascal) |       |
+| Rust      | 1931280 | [Rust](./rust) |       |
+
 ## Usage
 
-### [Assembler x86](./asm)
 ```
-cd asm && make run; cd -
-```
-
-### [C](./c)
-```
-cd c && make run; cd -
-```
-
-### [C++](./cpp)
-```
-cd cpp && make run; cd -
-```
-
-### [Fortran](./fortran)
-```
-cd fortran && make run; cd -
-```
-
-### [Golang](./go)
-```
-cd go && make run; cd -
-```
-
-### [Ocaml](./ocaml)
-```
-cd ocaml && make run; cd -
-```
-
-### [Pascal](./pascal)
-```
-cd pascal && make run; cd -
-```
-
-### [Rust](./rust)
-```
-cd rust && make run; cd -
-```
-
-### Do 'em all
-```
-for variant in c cpp go ocaml pascal rust; do cd ${variant}; make run; cd -; done
+for variant in asm c cpp go ocaml pascal rust; do cd ${variant}; make run; cd -; done
 ```
 
 ## License
