@@ -6,6 +6,7 @@ A docker container is distroless when it is not based on a linux distribution, i
 Pro:
 - small attack vector
 - light footprint
+
 Contra:
 - ???
 
@@ -19,7 +20,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 
 ## Summary
 
-| Language  | Size | Link | Notes |   
+| Language  | Size (Bytes) | Code | Notes |   
 |-----------|------|------|-------|
 | Assembler | 776  | [x86 Assembler](./asm) |       |
 | C         | 967264 | [C](./c)     |       |
