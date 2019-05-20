@@ -20,19 +20,19 @@ Note: All variants are compiled within docker containers, so no variant specific
 
 ## Summary
 
-| Language  | Compiler | Size (Bytes) | Status | Notes |   
-|-----------|------|------|------|-------|
-| [x86 Assembler](./asm) | gasm | 776  | OK |       |
-| [C](./c)  |  gcc |967264 | OK |       |
-| [C++](./cpp) | g++ | 2249328 | OK |       |
-| [D](./d) | DMD |  | BROKEN | problems with static linking, PIC and PIE, seg faults |
-| [Fortran](./fortran) | gfortran |1096488 | OK |       |
-| [Golang](./go) | (standard) |1997487 | OK |       |
-| [Java](./java) | gcj |  | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
-| [Lisp](./lisp) | sbcl |  | BROKEN | doesn't link statically, yet |
-| [Ocaml](./ocaml) | ocaml | 1795392 | OK |       |
-| [Pascal](./pascal) | freepascal | 176424 | OK |       |
-| [Rust](./rust) | (standard) | 1931280 | OK |       |
+| Language  | Compiler | Size (Bytes) | Type | Status | Notes |   
+|-----------|------|------|------|------|-------|
+| [x86 Assembler](./asm) | gasm | 776  | statically linked | OK |       |
+| [C](./c)  |  gcc |967264 | statically linked | OK |       |
+| [C++](./cpp) | g++ | 2249328 | statically linked | OK |       |
+| [D](./d) | DMD |  | | BROKEN | problems with static linking, PIC and PIE, seg faults |
+| [Fortran](./fortran) | gfortran |1096488 | statically linked | OK |       |
+| [Golang](./go) | (standard) |1997487 | statically linked | OK |       |
+| [Java](./java) | gcj |  | | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
+| [Lisp](./lisp) | sbcl |  | | BROKEN | doesn't link statically, yet |
+| [Ocaml](./ocaml) | ocaml | 1795392 | statically linked | OK |       |
+| [Pascal](./pascal) | freepascal | 176424 | statically linked | OK |       |
+| [Rust](./rust) | (standard) | 1931280 | statically linked | OK |       |
 
 ## Usage
 
