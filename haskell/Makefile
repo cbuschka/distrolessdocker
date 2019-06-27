@@ -1,11 +1,8 @@
 all:	clean compile dockerize
 
-prepare:
-	docker build -t haskell:8.6.5-with-static-libs -f Dockerfile.build .
-
-compile:	prepare
+compile:
 	mkdir -p build/ && \
-	docker run -ti -v ${PWD}:/work -w /work -u $(shell id -u):$(shell id -g) haskell:8.6.5-with-static-libs /bin/bash -c "cd build/ && ghc -optl-static -optl-pthread -o hello ../hello.hs"
+	docker run -ti -v ${PWD}:/work -w /work -u $(shell id -u):$(shell id -g) haskell:8.6.5 /bin/bash -c "cd build/ && ghc -optl-static -optl-pthread -o hello ../hello.hs"
 
 clean:
 	rm -rf build/
