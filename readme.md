@@ -26,8 +26,9 @@ Note: All variants are compiled within docker containers, so no variant specific
 | [C](./c)  |  gcc |967264 | statically linked | OK |       |
 | [C++](./cpp) | g++ | 2249328 | statically linked | OK |       |
 | [D](./d) | DMD |  | | BROKEN | problems with static linking, PIC and PIE, seg faults |
-| [Fortran](./fortran) | gfortran |1096488 | statically linked | OK |       |
+| [Fortran](./fortran) | gfortran | 1096488 | statically linked | OK |       |
 | [Golang](./go) | (standard) |1997487 | statically linked | OK |       |
+| [Haskell](./haskell) | (standard) | 2363384 | statically linked | OK |       |
 | [Java](./java) | gcj |  | | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
 | [Lisp](./lisp) | sbcl |  | | BROKEN | doesn't link statically, yet |
 | [Ocaml](./ocaml) | ocaml | 1795392 | statically linked | OK |       |
@@ -37,7 +38,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 ## Usage
 
 ```
-for variant in asm c cpp fortran go ocaml pascal rust; do cd ${variant}; make run; cd -; done
+for variant in asm c cpp fortran go haskell ocaml pascal rust; do cd ${variant}; make run; cd -; done
 ```
 
 ## License
