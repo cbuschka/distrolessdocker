@@ -42,4 +42,4 @@ for variant in asm c cpp fortran go haskell ocaml pascal rust; do cd ${variant};
 ```
 
 ## License
-MIT
+[MIT](./license.txt)
