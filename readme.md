@@ -31,6 +31,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 | [Haskell](./haskell) | (standard) | 2363384 | statically linked | OK |       |
 | [Java](./java) | gcj |  | | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
 | [Lisp](./lisp) | sbcl |  | | BROKEN | doesn't link statically, yet |
+| [Nim](./nim) | (standard) | 957808 | statically linked | OK |
 | [Ocaml](./ocaml) | ocaml | 1795392 | statically linked | OK |       |
 | [Pascal](./pascal) | freepascal | 176424 | statically linked | OK |       |
 | [Rust](./rust) | (standard) | 1931280 | statically linked | OK |       |
@@ -38,7 +39,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 ## Usage
 
 ```
-for variant in asm c cpp fortran go haskell ocaml pascal rust; do cd ${variant}; make run; cd -; done
+for variant in asm c cpp fortran go haskell nim ocaml pascal rust; do cd ${variant}; make run; cd -; done
 ```
 
 ## License
