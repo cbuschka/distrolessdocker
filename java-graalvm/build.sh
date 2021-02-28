@@ -4,7 +4,7 @@ trap "exit 1" SIGINT
 trap "exit 1" SIGTERM
 trap "exit 1" SIGHUP
 
-WORK_DIR=$(cd `dirname 0` && pwd)
+WORK_DIR=$(cd `dirname 0` && pwd -P)
 
 rm -rf $WORK_DIR/build && mkdir -p $WORK_DIR/build/classes
 cd $WORK_DIR/src
