@@ -29,7 +29,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 | [Fortran](./fortran) | gfortran | 1096488 | statically linked | OK |       |
 | [Golang](./go) | (standard) | 1997487 | statically linked | OK |       |
 | [Haskell](./haskell) | (standard) | 2363384 | statically linked | OK |       |
-| [Java](./java) | gcj |  | | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
+| [Java](./java-gcj) | gcj | | | NO CHANCE | gcj is dead; seems that libgcj.a has never been delivered |
 | [Java](./java-graalvm) | graalvm | 8074624 | statically linked | OK | |
 | [Lisp](./lisp) | sbcl |  | | BROKEN | doesn't link statically, yet |
 | [Nim](./nim) | (standard) | 957808 | statically linked | OK |
