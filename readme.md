@@ -22,6 +22,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 
 | Language  | Compiler | Size (Bytes) | Type | Status | Notes |   
 |-----------|------|------|------|------|-------|
+| [ADA](./ada) | gnat | 1080256 | statically linked | OK | |
 | [x86 Assembler](./asm) | gasm | 776  | statically linked | OK |       |
 | [C](./c)  |  gcc |967264 | statically linked | OK |       |
 | [C++](./cpp) | g++ | 2249328 | statically linked | OK |       |
@@ -40,7 +41,7 @@ Note: All variants are compiled within docker containers, so no variant specific
 ## Usage
 
 ```
-for variant in asm c cpp fortran go haskell java-graalvm nim ocaml pascal rust; do cd ${variant}; make run; cd -; done
+for variant in ada asm c cpp fortran go haskell java-graalvm nim ocaml pascal rust; do cd ${variant}; make run; cd -; done
 ```
 
 ## License
